@@ -137,7 +137,7 @@ export function ChooseCause() {
               const ItemIcon = item.icon;
               const isActive = index === active;
               return (
-                <li key={item.id} className="border-b border-ink/12">
+                <li key={item.id} className="flex flex-1 border-b border-ink/12">
                   <button
                     type="button"
                     data-cursor-hover
@@ -147,6 +147,7 @@ export function ChooseCause() {
                     aria-pressed={isActive}
                     className="group relative flex w-full items-center gap-6 overflow-hidden px-2 py-6 text-left md:py-8"
                   >
+
                     <motion.span
                       aria-hidden
                       className="absolute inset-y-0 left-0 -z-0 bg-ink"
