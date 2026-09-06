@@ -128,9 +128,11 @@ export function ChooseCause() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-10 lg:mt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="mt-16 grid grid-cols-1 items-stretch gap-10 lg:mt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           {/* Cause index */}
-          <ul ref={listRef} className="border-t border-ink/12">
+          <div className="flex h-full flex-col">
+          <ul ref={listRef} className="flex flex-1 flex-col border-t border-ink/12">
+
             {CAUSES.map((item, index) => {
               const ItemIcon = item.icon;
               const isActive = index === active;
