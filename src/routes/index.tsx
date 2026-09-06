@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
+import { ChooseCause } from "@/components/ChooseCause";
 
 export const Route = createFileRoute("/")({
   head: () => ({
