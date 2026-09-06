@@ -194,6 +194,14 @@ export function ChooseCause() {
               );
             })}
           </ul>
+          <div className="mt-8 grid grid-cols-3 gap-4 border-t border-ink/12 pt-6 font-stamp text-[0.6rem] uppercase tracking-[0.24em] text-ink/50">
+            <div><span className="block font-display text-3xl tracking-normal text-ink">100%</span>to your charity</div>
+            <div><span className="block font-display text-3xl tracking-normal text-ink">40+</span>vetted partners</div>
+            <div><span className="block font-display text-3xl tracking-normal text-ink">0$</span>cost to you</div>
+          </div>
+          </div>
+
+
 
           {/* Live impact card */}
           <motion.div
