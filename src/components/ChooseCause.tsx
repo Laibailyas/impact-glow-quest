@@ -128,14 +128,16 @@ export function ChooseCause() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-10 lg:mt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="mt-16 grid grid-cols-1 items-stretch gap-10 lg:mt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           {/* Cause index */}
-          <ul ref={listRef} className="border-t border-ink/12">
+          <div className="flex h-full flex-col">
+          <ul ref={listRef} className="flex flex-1 flex-col border-t border-ink/12">
+
             {CAUSES.map((item, index) => {
               const ItemIcon = item.icon;
               const isActive = index === active;
               return (
-                <li key={item.id} className="border-b border-ink/12">
+                <li key={item.id} className="flex flex-1 border-b border-ink/12">
                   <button
                     type="button"
                     data-cursor-hover
@@ -145,6 +147,7 @@ export function ChooseCause() {
                     aria-pressed={isActive}
                     className="group relative flex w-full items-center gap-6 overflow-hidden px-2 py-6 text-left md:py-8"
                   >
+
                     <motion.span
                       aria-hidden
                       className="absolute inset-y-0 left-0 -z-0 bg-ink"
@@ -191,6 +194,14 @@ export function ChooseCause() {
               );
             })}
           </ul>
+          <div className="mt-8 grid grid-cols-3 gap-4 border-t border-ink/12 pt-6 font-stamp text-[0.6rem] uppercase tracking-[0.24em] text-ink/50">
+            <div><span className="block font-display text-3xl tracking-normal text-ink">100%</span>to your charity</div>
+            <div><span className="block font-display text-3xl tracking-normal text-ink">40+</span>vetted partners</div>
+            <div><span className="block font-display text-3xl tracking-normal text-ink">0$</span>cost to you</div>
+          </div>
+          </div>
+
+
 
           {/* Live impact card */}
           <motion.div
