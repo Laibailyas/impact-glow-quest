@@ -49,8 +49,8 @@ export function InstallSun({ anchorRef }: { anchorRef: RefObject<HTMLElement | n
     const s = lerp(START_SIZE, END_SIZE, p);
     const startX = rect.left + rect.width / 2 - s / 2;
     const startY = rect.top + sy + rect.height / 2 - s / 2;
-    const endX = window.innerWidth - s * 0.72;
-    const endY = window.innerHeight - s * 0.72;
+    const endX = window.innerWidth - s * 0.84;
+    const endY = window.innerHeight - s * 0.84;
     x.set(lerp(startX, endX, p));
     y.set(lerp(startY, endY, p));
     size.set(s);
