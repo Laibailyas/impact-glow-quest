@@ -1,0 +1,4 @@
+- [ ] Rebuild section 3 to match the uploaded video's horizontal click-card layout and motion, using Dotis content
+- [ ] Move the sticky install sun farther outside the bottom-right corner
+- [ ] Add and connect the remaining landing-page sections
+- [ ] Verify the full page and interactions
