@@ -3,6 +3,10 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { ChooseCause } from "@/components/ChooseCause";
+import { SecurityControl } from "@/components/SecurityControl";
+import { SocialProof } from "@/components/SocialProof";
+import { Faq } from "@/components/Faq";
+import { FinalCta } from "@/components/FinalCta";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,9 +29,10 @@ function Index() {
       <Hero />
       <HowItWorks />
       <ChooseCause />
-      <section id="install" className="flex min-h-[60vh] items-center justify-center bg-paper px-6 text-ink">
-        <h2 className="max-w-3xl text-center font-display text-[clamp(2.5rem,6vw,5.5rem)] leading-[0.95]">Next sections coming — the Install Dotis sun stays bottom right.</h2>
-      </section>
+      <SecurityControl />
+      <SocialProof />
+      <Faq />
+      <FinalCta />
     </main>
   );
 }
